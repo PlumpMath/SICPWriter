@@ -78,9 +78,6 @@ class Ui_Form(object):
             print("Error!")
             return
 
-        if not self.filename.endswith(".txt"):
-            self.filename += ".txt"
-
 
         with open(self.filename, "wt") as file:
             file.write(self.plainTextEdit.toPlainText())
